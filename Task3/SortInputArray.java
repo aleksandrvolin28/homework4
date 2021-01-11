@@ -8,7 +8,6 @@ public class SortInputArray {
         Scanner input = new Scanner(System.in);
 
 
-
         int[] array = new int[10];
         for (int i = 0; i < 10; i++) {
             System.out.print((i + 1) + "Please, enter your number: ");
@@ -21,26 +20,26 @@ public class SortInputArray {
         printResult(requiredOrder, array);
     }
 
-        static int[] MaxSort(int... array){
-        for (int k = 0; k < array.length-1; k++){
-            for (int l = 0; l < array.length-1; l++){
-                if (array [l] > array [l+1]) {
-                    int buffer = array [l];
-                    array [l] = array[l+1];
-                    array[l+1] = buffer;
+    static int[] MaxSort(int... array) {
+        for (int k = 0; k < array.length - 1; k++) {
+            for (int l = 0; l < array.length - 1; l++) {
+                if (array[l] > array[l + 1]) {
+                    int buffer = array[l];
+                    array[l] = array[l + 1];
+                    array[l + 1] = buffer;
                 }
 
             }
         }
-            return array;
+        return array;
     }
 
-    static int[] MinSort(int... array){
-        for (int k = 0; k < array.length -1; k++){
-            for (int l = 0; l < array.length -1; l++){
-                if (array[l] < array[l+1]) {
-                    int buffer = array [l+1];
-                    array [l+1] = array[l];
+    static int[] MinSort(int... array) {
+        for (int k = 0; k < array.length - 1; k++) {
+            for (int l = 0; l < array.length - 1; l++) {
+                if (array[l] < array[l + 1]) {
+                    int buffer = array[l + 1];
+                    array[l + 1] = array[l];
                     array[l] = buffer;
                 }
 

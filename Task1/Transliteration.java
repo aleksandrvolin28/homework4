@@ -1,6 +1,5 @@
 package Task1;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 class Transliteration {

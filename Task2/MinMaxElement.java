@@ -1,6 +1,5 @@
 package Task2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MinMaxElement {
@@ -20,7 +19,7 @@ public class MinMaxElement {
         printResult(requiredOrder, arrayelements);
     }
 
-    static int MaxElement( int... array) {
+    static int MaxElement(int... array) {
         int max = array[0];
         for (int k = 0; k < array.length; k++) {
             if (max < array[k]) {
@@ -41,21 +40,21 @@ public class MinMaxElement {
         return min;
     }
 
-        static void printResult (String requiredValue, int[] array){
-            switch (requiredValue) {
-                case "max":
-                    int maxElement = MaxElement(array);
-                    System.out.println("The maximal element is: " + maxElement);
-                    break;
-                case "min":
-                    int minElement = MinElement(array);
-                    System.out.println("The minimal element is: " + minElement);
-                    break;
-                default:
-                    System.out.println("Entered value (min or max) is not correct");
-                    break;
-            }
+    static void printResult(String requiredValue, int[] array) {
+        switch (requiredValue) {
+            case "max":
+                int maxElement = MaxElement(array);
+                System.out.println("The maximal element is: " + maxElement);
+                break;
+            case "min":
+                int minElement = MinElement(array);
+                System.out.println("The minimal element is: " + minElement);
+                break;
+            default:
+                System.out.println("Entered value (min or max) is not correct");
+                break;
         }
     }
+}
 
 
